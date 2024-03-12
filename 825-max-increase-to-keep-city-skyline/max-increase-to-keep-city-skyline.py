@@ -2,7 +2,7 @@ class Solution:
     def maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
         su = 0 
         matrix = len(grid)
-        for n in range(len(grid[0])):
+        for n in range(matrix):
             for m in range(len(grid[n])):
                 n1 = []
                 n2 = []
