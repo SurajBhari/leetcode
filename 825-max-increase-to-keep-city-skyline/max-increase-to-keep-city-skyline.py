@@ -9,7 +9,6 @@ class Solution:
                 n1.extend([grid[n][i] for i in range(matrix)])
                 n2.extend([grid[i][m] for i in range(matrix)])
                 maximum = min([max(n1), max(n2)])
-                print(maximum, n1,n2)
                 su += maximum - grid[n][m]
         return su
                 
