@@ -10,7 +10,6 @@ class Solution:
                     stmt3 = s[i] == s[i+1]
                     if ((stmt1) or (stmt2)) and not stmt3:
                         clean_pass = False
-                        print(s[i], s[i+1], i,i+1, stmt1, stmt2)
                         s = s.replace(s[i]+s[i+1], "")
                 except IndexError:
                     break
